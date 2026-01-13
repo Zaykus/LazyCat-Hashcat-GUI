@@ -60,5 +60,3 @@ This tool is a GUI wrapper. The heavy lifting is done by the world's fastest cra
 ## ⚠️ Disclaimer
 
 > This tool is for **educational purposes** and **authorized security testing** only. The usage of this tool for attacking targets without prior mutual consent is illegal. The developer assumes no liability and is not responsible for any misuse or damage caused by this program.
-
----
