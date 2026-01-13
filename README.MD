@@ -4,12 +4,14 @@
 
 ## ✨ Features
 
-* **Stealth UI:** Deep black/gray theme with integrated read-only terminal logs.
-* **Auto-Detection:** Automatically identifies your GPU IDs and Hashcat engine location.
-* **Smart Wordlists:** Auto-scans the `/wordlists` directory for compatible text files.
-* **Safe Execution:** Runs commands in a dedicated thread to prevent UI freezing.
+ * **Stealth UI:** Deep black/gray theme with integrated read-only terminal logs.
+ * **Plug & Play:** Hashcat engine is **pre-compiled** and included—no setup required.
+ * **Auto-Detection:** Automatically identifies your GPU IDs and Hashcat engine path.
+ * **Safe Execution:** Runs commands in a dedicated thread to prevent UI freezing.
 
----
+    <p align="left ">      
+                    <img src="Lazy.png" width="500" alt="LazyCat App Preview">
+    </p>
 
 ## 📦 Downloads & Installation
 
@@ -17,35 +19,33 @@
 
 Download **`LZC-Stand-alone.7z`**.
 
-* Includes `LazyCat.exe` and the core Hashcat binaries.
+* **Pre-bundled:** This contains both `LazyCat.exe` and the **Hashcat Engine**.
+* **How to use:** Just extract and run.
 
 ### 2. The Wordlists (Optional)
 
 Download **`LZC-Wordlists.7z`**.
 
-* Contains `rockyou.txt` and other top-tier dictionaries.
-
-### 📂 Folder Structure
-
-Ensure your directory looks exactly like this for the app to function:
-
-```text
-/LazyCat_Folder/
-  ├── LazyCat.exe        <-- Main Application
-  └── wordlists/         <-- Folder containing .txt files
-
-```
+* Contains `rockyou.txt` and other top-tier dictionaries. Place this folder next to the `.exe`
 
 ---
 
-## 🛠️ Troubleshooting & Manual Setup
+## 🛠️ Recovery & Troubleshooting
 
-If you receive an error stating that the **Hashcat Engine was not found**, or if `hashcat.exe` is missing from your folder:
+**Note:** LazyCat comes with Hashcat ready to go. However, if your antivirus deletes the engine or you encounter a "File Not Found" error:
 
-1. **Download the Engine:** Visit the official [Hashcat Website](https://hashcat.net/hashcat/) and download the latest Windows binaries.
-2. **Extract:** Open the downloaded `.7z` file.
-3. **Placement:** Move the extracted folder into your LazyCat directory and rename it to simply `hashcat`.
-4. **Verify:** Your `LazyCat.exe` should now see the `hashcat/hashcat.exe` path clearly.
+1. **Manual Download:** Go to the [Official Hashcat Website](https://hashcat.net/hashcat/) and download the latest binaries.
+2. **Fix:** Extract the download and move the files into a folder named `hashcat` inside your LazyCat directory.
+3. **Structure Check:**
+```text
+/LazyCat_Folder/
+  ├── LazyCat.exe
+  └── wordlists/         <-- (From Wordlists package) 
+       ├── rockyou.txt
+       └── ...
+```
+
+
 
 ---
 
@@ -53,10 +53,11 @@ If you receive an error stating that the **Hashcat Engine was not found**, or if
 
 This tool is a GUI wrapper. The heavy lifting is done by the world's fastest cracker:
 
-* **Engine:** [Hashcat](https://hashcat.net/) by Jens "atom" Steube and the Hashcat team.
+* **Engine:** [Hashcat](https://hashcat.net/) — Special thanks to Jens "atom" Steube and the Hashcat team for their incredible work.
 
 ---
 
 ## ⚠️ Disclaimer
 
 > This tool is for **educational purposes** and **authorized security testing** only. The usage of this tool for attacking targets without prior mutual consent is illegal. The developer assumes no liability and is not responsible for any misuse or damage caused by this program.
+
