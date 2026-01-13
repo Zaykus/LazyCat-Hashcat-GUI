@@ -6,58 +6,54 @@
 
 * **Stealth UI:** Deep black/gray theme with integrated read-only terminal logs.
 * **Auto-Detection:** Automatically identifies your GPU IDs and Hashcat engine location.
-* **Crash Handler:** Built-in "Safe Mode" that generates debug logs if an error occurs.
 * **Smart Wordlists:** Auto-scans the `/wordlists` directory for compatible text files.
-* **Target Helper:** Integrated link to convert `.cap` files to Hashcat-ready formats.
 * **Safe Execution:** Runs commands in a dedicated thread to prevent UI freezing.
 
 ---
 
 ## 📦 Downloads & Installation
 
-We provide two separate packages to keep download sizes optimized.
-
 ### 1. The App (Required)
 
 Download **`LZC-Stand-alone.7z`**.
 
-* Includes `LazyCat.exe` and the full **Hashcat Engine**.
-* **How to use:** Extract the contents to a folder and run the executable.
+* Includes `LazyCat.exe` and the core Hashcat binaries.
 
 ### 2. The Wordlists (Optional)
 
 Download **`LZC-Wordlists.7z`**.
 
-* Includes `rockyou.txt` and `piotrcki-top10m.txt`.
-* **How to use:** Extract the `wordlists` folder and place it in the **same directory** as `LazyCat.exe`.
+* Contains `rockyou.txt` and other top-tier dictionaries.
 
 ### 📂 Folder Structure
 
-To ensure everything runs smoothly, your folder should look like this:
+Ensure your directory looks exactly like this for the app to function:
 
 ```text
 /LazyCat_Folder/
   ├── LazyCat.exe        <-- Main Application
-  ├── hashcat/           <-- (Included in Stand-alone)
-  └── wordlists/         <-- (Place your .txt files here)
-       ├── rockyou.txt
-       └── top-passwords.txt
+  └── wordlists/         <-- Folder containing .txt files
 
 ```
 
 ---
 
-## 🛠️ Usage Guide
+## 🛠️ Troubleshooting & Manual Setup
 
-1. **Target:** Click **"OPEN CONVERTER"** to turn your Wireshark `.cap` file into a `.hc22000` file. Load the resulting file into the app.
-2. **Hardware:** Click **"TEST GPU"**. Note the Device ID (usually 1 or 2) and enter it in the GPU ID box.
-3. **Attack Selection:**
-* **Wordlist:** Select a dictionary file from the dropdown.
-* **Brute-Force:** Enter a mask (e.g., `?d?d?d?d?d?d?d?d` for 8-digit numeric passwords).
+If you receive an error stating that the **Hashcat Engine was not found**, or if `hashcat.exe` is missing from your folder:
 
+1. **Download the Engine:** Visit the official [Hashcat Website](https://hashcat.net/hashcat/) and download the latest Windows binaries.
+2. **Extract:** Open the downloaded `.7z` file.
+3. **Placement:** Move the extracted folder into your LazyCat directory and rename it to simply `hashcat`.
+4. **Verify:** Your `LazyCat.exe` should now see the `hashcat/hashcat.exe` path clearly.
 
-4. **Execute:** Click **"START ATTACK"**. You can monitor progress via the terminal log.
-5. **Result:** If a match is found, a success notification will appear. Click **"DECRYPT RESULT"** to view the password.
+---
+
+## 📜 Credits
+
+This tool is a GUI wrapper. The heavy lifting is done by the world's fastest cracker:
+
+* **Engine:** [Hashcat](https://hashcat.net/) by Jens "atom" Steube and the Hashcat team.
 
 ---
 
