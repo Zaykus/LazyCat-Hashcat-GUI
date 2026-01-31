@@ -1,8 +1,8 @@
-# 🐱 LazyCat Cracker // Purr-fessional Edition
+#  LazyCat Cracker // Purr-fessional Edition
 
 **LazyCat** is a modern, dark-themed GUI wrapper for **Hashcat**, designed specifically for cracking WPA/WPA2 Wi-Fi Handshakes (`.hc22000`). It turns complex command-line attacks into a simple "Point & Click" experience.
 
-## ✨ Features
+##  Features
 
  * **Stealth UI:** Deep black/gray theme with integrated read-only terminal logs.
  * **Plug & Play:** Hashcat engine is **pre-compiled** and included—no setup required.
@@ -13,7 +13,7 @@
                     <img src="Lazy.png" width="500" alt="LazyCat App Preview">
     </p>
 
-## 📦 Downloads & Installation
+##  Downloads & Installation
 
 ### 1. The App (Required)
 
@@ -49,7 +49,7 @@ Download **`LZC-Wordlists.7z`**.
 
 ---
 
-## 📜 Credits
+##  Credits
 
 This tool is a GUI wrapper. The heavy lifting is done by the world's fastest cracker:
 
