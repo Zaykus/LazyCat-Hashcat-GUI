@@ -30,7 +30,7 @@ Download **`LZC-Wordlists.7z`**.
 
 ---
 
-## 🛠️ Recovery & Troubleshooting
+##  Recovery & Troubleshooting
 
 **Note:** LazyCat comes with Hashcat ready to go. However, if your antivirus deletes the engine or you encounter a "File Not Found" error:
 
